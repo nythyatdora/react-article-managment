@@ -1,0 +1,197 @@
+@import '../variable';
+
+.articles {
+    min-height: 100vh;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 200px auto 100px;
+
+    div:nth-child(1) {
+        grid-column: 2/5;
+
+        display: flex;
+        align-items: center;
+        font-size: 66px;
+    }
+
+    div:nth-child(2) {
+        grid-column: 2/5;
+        grid-row: 2;
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+
+            thead {
+                tr {
+                    th:first-child {
+                        border-top: none;
+                        border-left: none;
+                    }
+
+                    th:not(:first-child):not(:last-child) {
+                        border-top: none;
+                    }
+
+                    th:last-child {
+                        border-top: none;
+                        border-right: none;
+                    }
+
+                    th:nth-child(1) {
+                        width: 15%;
+                    }
+
+                    th:nth-child(2) {
+                        width: 25%;
+                    }
+
+                    th:nth-child(3) {
+                        width: 20%;
+                    }
+
+                    th:nth-child(5) {
+                        width: 15%;
+                    }
+                }
+            }
+
+            tbody {
+                td {
+                    div {
+                        width: 100%;
+
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-gap: .25rem;
+                        justify-items: center;
+
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            outline: none;
+                            border: none;
+                            background-color: white;
+
+                            svg {
+                                position: relative;
+                                font-size: 18px;
+                            }
+                        }
+
+                        a:nth-child(1) {
+                            border: 2px solid $primary-color;
+
+                            svg {
+                                color: $primary-color;
+                            }
+
+                            &:hover {
+                                border-style: dashed;
+                            }
+
+                            &:active {
+                                background-color: $primary-color;
+
+                                svg {
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        a:nth-child(2) {
+                            border: 2px solid $tertiary-color;
+
+                            svg {
+                                color: $tertiary-color;
+                            }
+
+                            &:hover {
+                                border-style: dashed;
+                            }
+
+                            &:active {
+                                background-color: $tertiary-color;
+
+                                svg {
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        a:nth-child(3) {
+                            border: 2px solid $secondary-color;
+
+                            svg {
+                                color: $secondary-color;
+                            }
+
+                            &:hover {
+                                border-style: dashed;
+                            }
+
+                            &:active {
+                                background-color: $secondary-color;
+
+                                svg {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                tr:not(:last-child) {
+                    td:first-child {
+                        border-left: none;
+                    }
+
+                    td:last-child {
+                        border-right: none;
+                    }
+                }
+
+                tr:last-child {
+                    td:first-child {
+                        border-bottom: none;
+                        border-left: none;
+                    }
+
+                    td:not(:first-child):not(:last-child) {
+                        border-bottom: none;
+                    }
+
+                    td:last-child {
+                        border-bottom: none;
+                        border-right: none;
+
+                    }
+                }
+            }
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            padding: .5rem;
+            margin: 0;
+        }
+
+        th {
+            font-size: 22px;
+        }
+
+        td {
+            font-size: 18px;
+        }
+
+    }
+}

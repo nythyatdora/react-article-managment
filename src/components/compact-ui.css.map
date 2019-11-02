@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "compact-ui.scss",
+        "_variable.scss"
+    ],
+    "names": [],
+    "file": "compact-ui.css"
+}

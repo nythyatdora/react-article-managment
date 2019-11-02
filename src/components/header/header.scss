@@ -1,0 +1,57 @@
+@import '../variable';
+
+header {
+    border-bottom: 2px solid black;
+
+    height: 80px;
+    z-index: 100;
+
+    background-color: $primary-color;
+
+    div {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+
+        span {
+            color: white;
+            font-weight: bold;
+
+            align-self: center;
+            z-index: 101;
+
+            a {
+                color: $secondary-color;
+            }
+        }
+
+        div {
+            padding: 0 25%;
+            width: 100%;
+            position: absolute;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            button {
+                color: white;
+                border: none;
+                outline: none;
+                background-color: transparent;
+
+                font-size: 24px;
+
+                &:hover {
+                    border: 2px dashed $secondary-color;
+                }
+
+                &:active {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}

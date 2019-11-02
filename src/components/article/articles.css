@@ -1,0 +1,198 @@
+.articles {
+  min-height: 100vh;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 200px auto 100px;
+      grid-template-rows: 200px auto 100px;
+}
+
+.articles div:nth-child(1) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 66px;
+}
+
+.articles div:nth-child(2) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.articles div:nth-child(2) table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.articles div:nth-child(2) table thead tr th:first-child {
+  border-top: none;
+  border-left: none;
+}
+
+.articles div:nth-child(2) table thead tr th:not(:first-child):not(:last-child) {
+  border-top: none;
+}
+
+.articles div:nth-child(2) table thead tr th:last-child {
+  border-top: none;
+  border-right: none;
+}
+
+.articles div:nth-child(2) table thead tr th:nth-child(1) {
+  width: 15%;
+}
+
+.articles div:nth-child(2) table thead tr th:nth-child(2) {
+  width: 25%;
+}
+
+.articles div:nth-child(2) table thead tr th:nth-child(3) {
+  width: 20%;
+}
+
+.articles div:nth-child(2) table thead tr th:nth-child(5) {
+  width: 15%;
+}
+
+.articles div:nth-child(2) table tbody td div {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: .25rem;
+  justify-items: center;
+}
+
+.articles div:nth-child(2) table tbody td div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: white;
+}
+
+.articles div:nth-child(2) table tbody td div a svg {
+  position: relative;
+  font-size: 18px;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(1) {
+  border: 2px solid #6C63FF;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(1) svg {
+  color: #6C63FF;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(1):hover {
+  border-style: dashed;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(1):active {
+  background-color: #6C63FF;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(1):active svg {
+  color: white;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(2) {
+  border: 2px solid #FDE74C;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(2) svg {
+  color: #FDE74C;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(2):hover {
+  border-style: dashed;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(2):active {
+  background-color: #FDE74C;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(2):active svg {
+  color: white;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(3) {
+  border: 2px solid #F05D5E;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(3) svg {
+  color: #F05D5E;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(3):hover {
+  border-style: dashed;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(3):active {
+  background-color: #F05D5E;
+}
+
+.articles div:nth-child(2) table tbody td div a:nth-child(3):active svg {
+  color: white;
+}
+
+.articles div:nth-child(2) table tbody tr:not(:last-child) td:first-child {
+  border-left: none;
+}
+
+.articles div:nth-child(2) table tbody tr:not(:last-child) td:last-child {
+  border-right: none;
+}
+
+.articles div:nth-child(2) table tbody tr:last-child td:first-child {
+  border-bottom: none;
+  border-left: none;
+}
+
+.articles div:nth-child(2) table tbody tr:last-child td:not(:first-child):not(:last-child) {
+  border-bottom: none;
+}
+
+.articles div:nth-child(2) table tbody tr:last-child td:last-child {
+  border-bottom: none;
+  border-right: none;
+}
+
+.articles div:nth-child(2) th,
+.articles div:nth-child(2) td {
+  border: 2px solid black;
+  padding: .5rem;
+  margin: 0;
+}
+
+.articles div:nth-child(2) th {
+  font-size: 22px;
+}
+
+.articles div:nth-child(2) td {
+  font-size: 18px;
+}
+/*# sourceMappingURL=articles.css.map */

@@ -1,0 +1,60 @@
+.home {
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    margin-top: -80px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    div:nth-child(1) {
+        grid-row: 2/5;
+        grid-column: 2/4;
+
+        span:nth-child(1) {
+            display: block;
+            font-size: 122px;
+            font-weight: bold;
+        }
+
+        span:nth-child(2) {
+            display: block;
+            font-size: 44px;
+        }
+
+        button {
+            color: white;
+            background-color: #6C63FF;
+
+            width: 80px;
+            height: 80px;
+            font-weight: bold;
+            
+            border-radius: 50%;
+            outline: none;
+            border: 2px solid #6C63FF;
+
+            &:active {
+                color: #6C63FF;
+                background: white;
+                border: 2px dashed;
+            }
+        }
+    }
+
+    div:nth-child(2) {
+        img {
+            width: auto;
+            height: auto;
+
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 20%;
+            right: -15%;
+
+            z-index: -100;
+        }
+    }
+}

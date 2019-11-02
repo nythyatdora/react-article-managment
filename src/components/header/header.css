@@ -1,0 +1,64 @@
+header {
+  border-bottom: 2px solid black;
+  height: 80px;
+  z-index: 100;
+  background-color: #6C63FF;
+}
+
+header div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+}
+
+header div span {
+  color: white;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  z-index: 101;
+}
+
+header div span a {
+  color: #F05D5E;
+}
+
+header div div {
+  padding: 0 25%;
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div div button {
+  color: white;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 24px;
+}
+
+header div div button:hover {
+  border: 2px dashed #F05D5E;
+}
+
+header div div button:active {
+  color: #F05D5E;
+}
+/*# sourceMappingURL=header.css.map */

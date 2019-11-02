@@ -1,0 +1,110 @@
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  border-bottom: 2px solid black;
+  z-index: 1071;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+nav ul li:not(:last-child) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+nav ul li:not(:last-child) a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #6C63FF;
+  font-weight: bold;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+nav ul li:not(:last-child) a:active {
+  color: white;
+}
+
+nav ul li:not(:last-child):hover {
+  border: 2px dashed #6C63FF;
+}
+
+nav ul li:not(:last-child):active {
+  background-color: #6C63FF;
+}
+
+nav ul li:last-child {
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+nav ul li:last-child a {
+  width: 70%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-weight: bold;
+  color: #6C63FF;
+  background-color: white;
+  border: 2px solid #6C63FF;
+  border-radius: 30px;
+  outline-width: 0;
+}
+
+nav ul li:last-child a:hover {
+  color: #6C63FF;
+  background-color: white;
+  border-style: dashed;
+}
+
+nav ul li:last-child a:active {
+  color: white;
+  background-color: #6C63FF;
+  border-style: solid;
+}
+/*# sourceMappingURL=nav.css.map */

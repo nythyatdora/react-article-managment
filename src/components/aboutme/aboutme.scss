@@ -1,0 +1,43 @@
+@import '../variable';
+
+.aboutme {
+    margin-top: -80px;
+    height: 100vh;
+
+    div:nth-child(1) {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        span {
+            color: transparent;
+            -webkit-text-stroke-color: $primary-color;
+            -webkit-text-stroke-width: .5px;
+
+            font-size: 144px;
+            font-weight: bold;
+        }
+
+        svg {
+            width: 100%;
+        }
+    }
+
+    img {
+        width: 70%;
+        height: 70%;
+        margin: auto;
+        padding: 0;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 20%;
+        right: 25;
+
+        z-index: -100;
+    }
+}

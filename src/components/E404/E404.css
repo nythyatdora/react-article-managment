@@ -1,0 +1,45 @@
+.error404 img {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  margin: auto;
+  padding: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -100;
+}
+
+.error404 div.text-list {
+  position: absolute;
+  height: 100%;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.error404 div.text-list span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: .5px;
+  font-size: 144px;
+  font-weight: bold;
+}
+
+.error404 div.text-list span:hover {
+  -webkit-text-stroke-color: #6C63FF;
+}
+
+.error404 div.text-list span:active {
+  color: #6C63FF;
+}
+/*# sourceMappingURL=E404.css.map */

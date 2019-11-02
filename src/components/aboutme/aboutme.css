@@ -1,0 +1,44 @@
+.aboutme {
+  margin-top: -80px;
+  height: 100vh;
+}
+
+.aboutme div:nth-child(1) {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutme div:nth-child(1) span {
+  color: transparent;
+  -webkit-text-stroke-color: #6C63FF;
+  -webkit-text-stroke-width: .5px;
+  font-size: 144px;
+  font-weight: bold;
+}
+
+.aboutme div:nth-child(1) svg {
+  width: 100%;
+}
+
+.aboutme img {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 20%;
+  right: 25;
+  z-index: -100;
+}
+/*# sourceMappingURL=aboutme.css.map */
