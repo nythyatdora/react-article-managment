@@ -1,13 +1,17 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './nav.css';
 
-export default function Nav() {
+export default function Nav(props) {
     return (
         <nav>
             <ul>
                 <li>
                     <Link to={'/home'}>ទំព័រដើម</Link>
+                </li>
+
+                <li>
+                    <Link to={'/posts'}>អាន</Link>
                 </li>
 
                 <li>
@@ -19,7 +23,7 @@ export default function Nav() {
                 </li>
 
                 <li>
-                    <Link to={'/login'} className="">ចុះឈ្មោះ</Link>
+                    <Link to={'/login'}>ចុះឈ្មោះ</Link>
                 </li>
             </ul>
         </nav >

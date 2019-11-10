@@ -7,7 +7,7 @@ footer {
     grid-template-rows: 200px 50px;
 
     padding-top: 1rem;
-    border-top: 2px solid black;
+    // border-top: 2px solid black;
 
     div:nth-child(1) {
         grid-column: 2/2;
@@ -60,9 +60,9 @@ footer {
     }
 
     div:nth-child(3) {
-        color: white;
-        background-color: $primary-color;
-        border-top: 4px dashed white;
+        color: black;
+        // background-color: $primary-color;
+        // border-top: 2px solid black;
 
         display: flex;
         justify-content: center;
@@ -74,7 +74,6 @@ footer {
 
         span {
             span {
-                color: yellow;
                 font-weight: bold;
             }
         }
@@ -84,10 +83,6 @@ footer {
 
             svg:nth-child(1) {
                 color: #D72D42;
-            }
-
-            svg:nth-child(2) {
-                color: #B37838;
             }
         }
     }

@@ -37,6 +37,9 @@ export default function Footer() {
                         <Link to='/home'>ទំព័រដើម</Link>
                     </li>
                     <li>
+                        <Link to='/posts'>អាន</Link>
+                    </li>
+                    <li>
                         <Link to='/articles'>គ្រប់គ្រង</Link>
                     </li>
                     <li>
@@ -49,7 +52,7 @@ export default function Footer() {
                     រក្សាសិទ្ធដោយ<span>នី ធ្យត្សដូរ៉ា </span>
                 </span>
 
-                <span>បង្កើតជាមួយ <i className="fas fa-heart"></i> និង <i className="fas fa-coffee"></i></span>
+                <span>បង្កើតជាមួយ <i className="fas fa-heart"></i></span>
             </div>
         </footer>
     )

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link, Switch, Route, useRouteMatch } from 'react-router-dom';
+import { Link, useRouteMatch } from 'react-router-dom';
 
 export default function ArticleRow(props) {
     const { data } = props;
-    const { path, url } = useRouteMatch();
+    const { url } = useRouteMatch();
 
     return (
         <tr>

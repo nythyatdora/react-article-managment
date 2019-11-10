@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './aboutme.css';
-import coding from '../../svg/undraw_coding_6mjf.svg';
+// import coding from '../../svg/undraw_coding_6mjf.svg';
 
 export default function AboutMe() {
     return (

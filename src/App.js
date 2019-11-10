@@ -7,7 +7,6 @@ import Main from './components/main/main';
 import Footer from './components/footer/footer';
 import E404 from './components/E404/E404';
 
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
             <E404></E404>
           </Route>
 
-          <Route path={'', '/'}>
+          <Route path={['', '/']}>
             <Nav></Nav>
             <Header></Header>
             <Main></Main>

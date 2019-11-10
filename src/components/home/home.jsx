@@ -12,7 +12,7 @@ export default function Home() {
             </div>
 
             <div>
-                <img src={homepic}></img>
+                <img src={homepic} alt={'អ្នកឌីសាញ'}></img>
             </div>
         </div>
     )

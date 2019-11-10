@@ -9,10 +9,12 @@
       grid-template-rows: 200px auto 100px;
 }
 
-.articles div:nth-child(1) {
+.articles .articles--head {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-column: 2/5;
+  -ms-grid-row: 1;
+  grid-row: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,7 +24,43 @@
   font-size: 66px;
 }
 
-.articles div:nth-child(2) {
+.articles .articles--head a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid green;
+  outline: none;
+  width: 66px;
+  height: 66px;
+}
+
+.articles .articles--head a svg {
+  font-size: 28px;
+  color: green;
+}
+
+.articles .articles--head a:hover {
+  border-style: dashed;
+}
+
+.articles .articles--head a:active {
+  background: green;
+}
+
+.articles .articles--head a:active svg {
+  color: white;
+}
+
+.articles .articles--content {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-column: 2/5;
@@ -30,43 +68,43 @@
   grid-row: 2;
 }
 
-.articles div:nth-child(2) table {
+.articles .articles--content table {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
 }
 
-.articles div:nth-child(2) table thead tr th:first-child {
+.articles .articles--content table thead tr th:first-child {
   border-top: none;
   border-left: none;
 }
 
-.articles div:nth-child(2) table thead tr th:not(:first-child):not(:last-child) {
+.articles .articles--content table thead tr th:not(:first-child):not(:last-child) {
   border-top: none;
 }
 
-.articles div:nth-child(2) table thead tr th:last-child {
+.articles .articles--content table thead tr th:last-child {
   border-top: none;
   border-right: none;
 }
 
-.articles div:nth-child(2) table thead tr th:nth-child(1) {
+.articles .articles--content table thead tr th:nth-child(1) {
   width: 15%;
 }
 
-.articles div:nth-child(2) table thead tr th:nth-child(2) {
+.articles .articles--content table thead tr th:nth-child(2) {
   width: 25%;
 }
 
-.articles div:nth-child(2) table thead tr th:nth-child(3) {
+.articles .articles--content table thead tr th:nth-child(3) {
   width: 20%;
 }
 
-.articles div:nth-child(2) table thead tr th:nth-child(5) {
+.articles .articles--content table thead tr th:nth-child(5) {
   width: 15%;
 }
 
-.articles div:nth-child(2) table tbody td div {
+.articles .articles--content table tbody td div {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -76,7 +114,7 @@
   justify-items: center;
 }
 
-.articles div:nth-child(2) table tbody td div a {
+.articles .articles--content table tbody td div a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,105 +132,357 @@
   background-color: white;
 }
 
-.articles div:nth-child(2) table tbody td div a svg {
+.articles .articles--content table tbody td div a svg {
   position: relative;
   font-size: 18px;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(1) {
+.articles .articles--content table tbody td div a:nth-child(1) {
   border: 2px solid #6C63FF;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(1) svg {
+.articles .articles--content table tbody td div a:nth-child(1) svg {
   color: #6C63FF;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(1):hover {
+.articles .articles--content table tbody td div a:nth-child(1):hover {
   border-style: dashed;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(1):active {
+.articles .articles--content table tbody td div a:nth-child(1):active {
   background-color: #6C63FF;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(1):active svg {
+.articles .articles--content table tbody td div a:nth-child(1):active svg {
   color: white;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(2) {
+.articles .articles--content table tbody td div a:nth-child(2) {
   border: 2px solid #FDE74C;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(2) svg {
+.articles .articles--content table tbody td div a:nth-child(2) svg {
   color: #FDE74C;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(2):hover {
+.articles .articles--content table tbody td div a:nth-child(2):hover {
   border-style: dashed;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(2):active {
+.articles .articles--content table tbody td div a:nth-child(2):active {
   background-color: #FDE74C;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(2):active svg {
+.articles .articles--content table tbody td div a:nth-child(2):active svg {
   color: white;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(3) {
+.articles .articles--content table tbody td div a:nth-child(3) {
   border: 2px solid #F05D5E;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(3) svg {
+.articles .articles--content table tbody td div a:nth-child(3) svg {
   color: #F05D5E;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(3):hover {
+.articles .articles--content table tbody td div a:nth-child(3):hover {
   border-style: dashed;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(3):active {
+.articles .articles--content table tbody td div a:nth-child(3):active {
   background-color: #F05D5E;
 }
 
-.articles div:nth-child(2) table tbody td div a:nth-child(3):active svg {
+.articles .articles--content table tbody td div a:nth-child(3):active svg {
   color: white;
 }
 
-.articles div:nth-child(2) table tbody tr:not(:last-child) td:first-child {
+.articles .articles--content table tbody tr:not(:last-child) td:first-child {
   border-left: none;
 }
 
-.articles div:nth-child(2) table tbody tr:not(:last-child) td:last-child {
+.articles .articles--content table tbody tr:not(:last-child) td:last-child {
   border-right: none;
 }
 
-.articles div:nth-child(2) table tbody tr:last-child td:first-child {
+.articles .articles--content table tbody tr:last-child td:first-child {
   border-bottom: none;
   border-left: none;
 }
 
-.articles div:nth-child(2) table tbody tr:last-child td:not(:first-child):not(:last-child) {
+.articles .articles--content table tbody tr:last-child td:not(:first-child):not(:last-child) {
   border-bottom: none;
 }
 
-.articles div:nth-child(2) table tbody tr:last-child td:last-child {
+.articles .articles--content table tbody tr:last-child td:last-child {
   border-bottom: none;
   border-right: none;
 }
 
-.articles div:nth-child(2) th,
-.articles div:nth-child(2) td {
+.articles .articles--content th,
+.articles .articles--content td {
   border: 2px solid black;
   padding: .5rem;
   margin: 0;
 }
 
-.articles div:nth-child(2) th {
+.articles .articles--content th {
   font-size: 22px;
 }
 
-.articles div:nth-child(2) td {
+.articles .articles--content td {
   font-size: 18px;
+}
+
+.article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 100px auto 50px minmax(200px, auto) 100px;
+      grid-template-rows: 100px auto 50px minmax(200px, auto) 100px;
+}
+
+.article .article--header {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.article .article--header div:nth-child(1) {
+  font-size: 28px;
+}
+
+.article .article--header div:nth-child(2) {
+  margin-left: -5px;
+  font-size: 88px;
+  font-weight: bold;
+}
+
+.article .article--date {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+}
+
+.article .article--date span {
+  font-size: 18px;
+}
+
+.article .article--date span:nth-child(2) {
+  font-weight: bold;
+  padding-left: .5rem;
+}
+
+.article .article--description {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  font-size: 22px;
+  padding-top: 1rem;
+}
+
+.article .article--buttons {
+  position: -webkit-sticky;
+  position: sticky;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-row: 1/-1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 75px;
+}
+
+.article .article--buttons button {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #6C63FF;
+  outline: none;
+  border: 2px solid #6C63FF;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.article .article--buttons button:hover {
+  color: #6C63FF;
+  background-color: white;
+  border-style: dashed;
+}
+
+.article .article--buttons button:active {
+  color: white;
+  background-color: #6C63FF;
+}
+
+.article--manipulate {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 100px auto 50px minmax(200px, auto) 100px;
+      grid-template-rows: 100px auto 50px minmax(200px, auto) 100px;
+}
+
+.article--manipulate .article--manipulate--title {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.article--manipulate .article--manipulate--title div:nth-child(1) {
+  font-size: 28px;
+}
+
+.article--manipulate .article--manipulate--title div:nth-child(2) textarea {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  resize: none;
+  font-size: 88px;
+  border: 2px dashed black;
+  padding: 1.5rem;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 166px;
+}
+
+.article--manipulate .article--manipulate--date {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+}
+
+.article--manipulate .article--manipulate--date span:nth-child(1) {
+  font-size: 28px;
+}
+
+.article--manipulate .article--manipulate--date span:nth-child(2) input {
+  text-align: center;
+  width: 200px;
+  font-size: 22px;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+.article--manipulate .article--manipulate--description {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+}
+
+.article--manipulate .article--manipulate--description div:nth-child(1) {
+  font-size: 28px;
+}
+
+.article--manipulate .article--manipulate--description div:nth-child(2) textarea {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  resize: none;
+  font-size: 22px;
+  border: 2px dashed black;
+  padding: 1.5rem;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 22px;
+}
+
+.article--manipulate .article--manipulate--buttons {
+  position: -webkit-sticky;
+  position: sticky;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-row: 1/-1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 75px;
+}
+
+.article--manipulate .article--manipulate--buttons .--add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.article--manipulate .article--manipulate--buttons .--add button:first-child {
+  margin-bottom: 1rem;
+}
+
+.article--manipulate .article--manipulate--buttons .--edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.article--manipulate .article--manipulate--buttons .--edit button:first-child {
+  margin-bottom: 1rem;
+}
+
+.article--manipulate .article--manipulate--buttons button {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #6C63FF;
+  outline: none;
+  border: 2px solid #6C63FF;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.article--manipulate .article--manipulate--buttons button:hover {
+  color: #6C63FF;
+  background-color: white;
+  border-style: dashed;
+}
+
+.article--manipulate .article--manipulate--buttons button:active {
+  color: white;
+  background-color: #6C63FF;
 }
 /*# sourceMappingURL=articles.css.map */

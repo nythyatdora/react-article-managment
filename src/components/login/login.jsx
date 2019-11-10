@@ -1,6 +1,6 @@
 import React from 'react';
-import {Route, Link, useHistory} from 'react-router-dom';
 import './login.css';
+import { Authorize } from '../main/main';
 
 const defaultUser = {
     username: 'admin',
@@ -29,14 +29,17 @@ export default class Login extends React.Component {
         });
     };
 
-    logIn = (event) => {
-    };
-
     submitLogin = (event) => {
         event.preventDefault();
-
-        const {username, password} = this.state;
+        let { location, history } = this.props;
+        let { from } = location.state || { from: { pathname: "/" } };
+        const { username, password } = this.state;
         const isAllowed = username === defaultUser.username && password === defaultUser.password;
+
+        if (isAllowed) {
+            Authorize.authenticate();
+            history.replace(from);
+        }
     };
 
     render() {
@@ -54,7 +57,7 @@ export default class Login extends React.Component {
                         <input type="text" value={password} onChange={this.passwordTextHandler} />
 
                         <div>
-                            <button type="submit" onClick={this.logIn}>ចូល</button>
+                            <button type="submit">ចូល</button>
                             <button>ភ្លេច</button>
                         </div>
                     </form>
