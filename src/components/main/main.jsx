@@ -45,7 +45,7 @@ export default function Main() {
             >
             </Route>
 
-            <Route path={'/posts'} components={(props) => <Posts {...props} /> }></Route>
+            <Route path={'/posts'} component={(props) => <Posts {...props} />}></Route>
 
             <Route path={'/login'} component={
                 (props) => <Login {...props}></Login>

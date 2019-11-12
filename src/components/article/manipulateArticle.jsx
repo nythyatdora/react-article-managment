@@ -44,7 +44,7 @@ export default class ManipulateArticle extends React.Component {
                 }).catch(error => console.log(error));
     }
 
-    async pushNewArticle(article) {
+     pushNewArticle(article) {
         fetch(`http://www.api-ams.me/v1/api/articles`, {
             method: 'POST',
             headers: {

@@ -2,8 +2,10 @@ import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import CogoToast from 'cogo-toast';
 import DisplayArticlesContainer from './displayArticlesContainer';
+import { deleteArticle } from './../../actions/articleAction';
+import { connect } from 'react-redux';
 
-export default class DeleteArticle extends React.Component {
+export class DeleteArticle extends React.Component {
     constructor(props) {
         super(props);
 
@@ -12,37 +14,9 @@ export default class DeleteArticle extends React.Component {
         };
     }
 
-    async componentDidMount() {
+    componentDidMount() {
         let id = this.props.articleId;
-        await fetch(`http://www.api-ams.me/v1/api/articles/${id}`, {
-            method: 'DELETE',
-            headers: {
-                "content-type": "application/json;charset=UTF-8",
-            }
-        })
-            .then(res => {
-                let { status } = res;
-                if (status === 200) {
-                    CogoToast.loading('waiting for response...', {
-                        position: 'bottom-right',
-                    })
-                        .then(() => {
-                            CogoToast.success('selected item has been deleted!',
-                                {
-                                    position: 'bottom-right',
-                                }
-                            );
-
-                        });
-                }
-                else {
-                    CogoToast.error('something is wrong!',
-                        {
-                            position: 'bottom-right',
-                        }
-                    );
-                }
-            });
+        this.props.deleteArticle(id);
 
         this.setState({
             redirect: true,
@@ -54,14 +28,23 @@ export default class DeleteArticle extends React.Component {
         console.log(this.props);
 
         return (
-            <DisplayArticlesContainer></DisplayArticlesContainer> >
+            <>
+                <DisplayArticlesContainer></DisplayArticlesContainer>
 
-            <Route>
-                {redirect ?
-                    <Redirect to={'/articles'}></Redirect>
-                    : ''
-                }
-            </Route>);
-    }
+                <Route>
+                    {redirect ?
+                        <Redirect to={'/articles'}></Redirect>
+                        : ''
+                    }
+                </Route>);
+            </>
+        )
+    };
 }
 
+const mtp = (rootStore) => {
+    return {
+    }
+};
+
+export default connect(mtp, { deleteArticle })(DeleteArticle);

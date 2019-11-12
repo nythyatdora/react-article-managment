@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link, useRouteMatch, Route } from 'react-router-dom';
+import { Link, useRouteMatch } from 'react-router-dom';
 import ArticleRow from './articleRow';
-import CogoToast from 'cogo-toast';
 
 export default function DisplayArticles(props) {
     const { list } = props;

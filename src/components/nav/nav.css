@@ -1,10 +1,6 @@
 nav {
   position: -webkit-sticky;
   position: sticky;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
   z-index: 1071;
   top: 0;
   width: 100%;
@@ -13,15 +9,23 @@ nav {
 }
 
 nav ul {
-  padding: 0;
-  list-style-type: none;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-column: 2 / 5;
+  height: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[16];
+      grid-template-columns: repeat(16, 1fr);
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li:first-child {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+
+nav ul li:hover {
+  -ms-grid-column-span: 2 span;
+      grid-column-end: 2 span;
 }
 
 nav ul li:not(:last-child) {
@@ -61,8 +65,7 @@ nav ul li:not(:last-child):active {
 }
 
 nav ul li:last-child {
-  -ms-grid-column: 6;
-      grid-column-start: 6;
+  grid-column: -5/-3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
